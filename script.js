@@ -1,3 +1,1 @@
-if (condition) {
-    
-}
+document.getElementById("day1").src = "https://www.spc.noaa.gov/products/outlook/day1otlk.png";
