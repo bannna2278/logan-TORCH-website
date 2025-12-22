@@ -3,7 +3,8 @@ function loadDay(day) {
     img.src = `https://www.spc.noaa.gov/products/outlook/day${day}otlk.gif`;
 }
 
-// Load Day 1 by default
+window.loadDay = loadDay;
+
 document.addEventListener("DOMContentLoaded", () => {
     loadDay(1);
 });
