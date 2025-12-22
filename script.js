@@ -15,7 +15,7 @@ function loadDay(day1) {
     img.onerror = () => {
         spinner.style.display = "none";
         img.style.opacity = "1";
-        console.error("Failed to load SPC outlook for day", day);
+        console.error("Failed to load SPC outlook for day", day1);
     };
 }
 

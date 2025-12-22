@@ -120,3 +120,6 @@ list-style: none;
 .archives {
     background-color: #ffffff;
 }
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
