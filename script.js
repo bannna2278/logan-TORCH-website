@@ -1,12 +1,26 @@
 function loadDay(day) {
     const img = document.getElementById("spcOutlook");
+    const spinner = document.getElementById("spinner");
+
+    spinner.style.display = "block";
+    img.style.opacity = "0";
+
     img.src = `https://www.spc.noaa.gov/products/outlook/day${day}otlk.gif`;
+
+    img.onload = () => {
+        spinner.style.display = "none";
+        img.style.opacity = "1";
+    };
+
+    img.onerror = () => {
+        spinner.style.display = "none";
+        img.style.opacity = "1";
+        console.error("Failed to load SPC outlook for day", day);
+    };
 }
 
-// Make the function available to HTML buttons
 window.loadDay = loadDay;
 
-// Load Day 1 by default
 document.addEventListener("DOMContentLoaded", () => {
     loadDay(1);
 });
