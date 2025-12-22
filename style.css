@@ -123,3 +123,35 @@ list-style: none;
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+// styling for warnings feed
+#warnings-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.alert-card {
+    background: #fff4f4;
+    border-left: 6px solid #d40000;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alert-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+}
+
+.alert-card p {
+    margin: 4px 0;
+}
+
+.no-alerts {
+    background: #eef7ff;
+    border-left: 6px solid #0077ff;
+    padding: 15px;
+    border-radius: 6px;
+}
