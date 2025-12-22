@@ -1,11 +1,11 @@
-function loadDay(day) {
+function loadDay(day1) {
     const img = document.getElementById("spcOutlook");
     const spinner = document.getElementById("spinner");
 
     spinner.style.display = "block";
     img.style.opacity = "0";
 
-    img.src = `https://www.spc.noaa.gov/products/outlook/day${day}otlk.gif`;
+    img.src = `https://www.spc.noaa.gov/products/outlook/day${day1}otlk.gif`;
 
     img.onload = () => {
         spinner.style.display = "none";
