@@ -3,12 +3,10 @@ function loadDay(day) {
     img.src = `https://www.spc.noaa.gov/products/outlook/day${day}otlk.gif`;
 }
 
-function loadDay(day) {
-    const img = document.getElementById("spcOutlook");
-    img.src = `https://www.spc.noaa.gov/products/outlook/day2otlk.html`;
-}
+// Make the function available to HTML buttons
+window.loadDay = loadDay;
 
-function loadDay(day) {
-    const img = document.getElementById("spcOutlook");
-    img.src = `https://www.spc.noaa.gov/products/outlook/day3otlk.html`;
-}
+// Load Day 1 by default
+document.addEventListener("DOMContentLoaded", () => {
+    loadDay(1);
+});
