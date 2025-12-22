@@ -1,6 +1,9 @@
-const img = document.getElementById("day1");
 function loadDay(day) {
-    img.src = `https://www.spc.noaa.gov/products/outlook/day1otlk.gif
-`;
+    const img = document.getElementById("spcOutlook");
+    img.src = `https://www.spc.noaa.gov/products/outlook/day${day}otlk.gif`;
 }
-loadDay(1);
+
+// Load Day 1 by default
+document.addEventListener("DOMContentLoaded", () => {
+    loadDay(1);
+});
