@@ -91,7 +91,7 @@ list-style: none;
     margin: 0 auto;
  }
  body {
-    background-color: #ffffff;
+    background-color: #636060;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -123,7 +123,7 @@ list-style: none;
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
-// styling for warnings feed
+/* styling for warnings feed */
 #warnings-container {
     max-width: 900px;
     margin: 20px auto;
@@ -193,4 +193,24 @@ list-style: none;
 .team-member .contact a {
     color: #0077cc;
     text-decoration: none;
+}
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000	;
+    text-align: center;
+    font-size: 18px;
+    
+    }
+    .WX-container {
+    background: #b3b3b3;
+    border-left: 6px solid #4f70dd;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.WX-icon {
+    width: 25%;
+    height: auto;
+    max-width: 100%;
 }
